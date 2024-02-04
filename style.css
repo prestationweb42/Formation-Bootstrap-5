@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+/* font-family: "Noto Sans", sans-serif; */
+/* font-family: "Raleway", sans-serif; */
+/* Reset CSS*/
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: var(--secondary-font);
+}
+:root {
+    /* Color variables */
+    --main-red: #91283b;
+    --main-blue: #0065fc;
+    --bleu-nuit: #0f056b;
+    --lite-blue: #deebff;
+    --lite-gray: #f2f2f2;
+    --main-black: #000;
+    --main-white: #fff;
+
+    /* FONT */
+    --primary-font: "Noto Sans", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+
+    /* Text color variables */
+    --color-primary: var(--main-black);
+    --color-secondary: var(--main-white);
+}
+.base__container {
+    max-width: 1200px;
+    min-height: 90vh;
+    margin: 0 auto;
+}
+.base__container h1,
+h2 {
+    text-align: center;
+}
+.base__container h1 {
+    font-size: 3em;
+    font-family: var(--primary-font);
+    padding: 30px 0;
+    background-color: var(--main-blue);
+    color: var(--main-white);
+}
+.base__container h2 {
+    font-size: 2em;
+    padding: 20px 0;
+}
+.base__container .link_back {
+    font-size: 2em;
+    color: var(--bleu-nuit);
+}
+/* Seting List Ul Li a*/
+.base__container .list__item a {
+    font-size: 1.5em;
+    color: var(--main-red);
+    text-decoration: underline;
+}
+.base__container h3 {
+    font-size: 2em;
+    color: var(--main-blue);
+    margin-top: 20px;
+}
+.base__container p {
+    font-size: 1.5em;
+}
+.definition {
+    line-height: 1.5;
+}
+
+/* Seeting Navigation */
+.nav_list {
+    inline-size: 100%;
+    block-size: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav_list .nav_item .nav_link {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 20px;
+    color: var(--main-white);
+    background-color: var(--main-blue);
+    border-radius: 5px;
+    transition: all 200ms ease-in-out;
+}
+.nav_list .nav_item .nav_link:hover {
+    color: var(--main-blue);
+    background-color: var(--main-white);
+    border: 1px solid var(--main-blue);
+    border-radius: 5px;
+    transition: all 200ms ease-in-out;
+}
