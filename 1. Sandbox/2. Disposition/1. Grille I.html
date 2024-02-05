@@ -52,10 +52,11 @@
         <h2 class="display-6 mb-3 text-center">Le Container</h2>
         <!-- [container|container-fluid] -->
 
-        <div class=" bg-dark p-5 mb-5">
+        <div class="container bg-dark p-5 mb-5">
             <h3 class="text-light text-center">Le container sert à centrer le contenu.</h3>
         </div>
 
+         <hr class="mt-5" style="border: 2px solid blue" />
         <h2 class="display-6 mb-3 text-center">Le Container fluide</h2>
         <!-- [container-fluid] -->
 
@@ -63,43 +64,47 @@
             <h3 class="text-light text-center">Le container-fluid prend 100% de la place, tout le temps</h3>
         </div>
 
-
+         <hr class="mt-5" style="border: 2px solid blue" />
         <h2 class="display-6 mb-3 text-center">Des containers reactifs.</h2>
         <!-- [container-sm|md|lg|xl|xxl] -->
-        <div class="container-sm p-3 mt-1 mx-auto text-light bg-success">100% jusqu'à sm</div>
-        <div class="container-md p-3 mt-1 mx-auto text-light bg-success">100% jusqu'à md</div>
-        <div class="container-lg p-3 mt-1 mx-auto text-light bg-success">100% jusqu'à lg</div>
-        <div class="container-xl p-3 mt-1 mx-auto text-light bg-success">100% jusqu'à xl</div>
-        <div class="container-xxl p-3 mt-1 mx-auto mb-5 text-light bg-success">100% jusqu'à xxl</div>
+        <div class="container-sm p-3 mt-1 mx-auto text-light bg-success fs-4">.container-sm - 100% jusqu'à sm</div>
+        <div class="container-md p-3 mt-1 mx-auto text-light bg-success fs-4">.container-md - 100% jusqu'à md</div>
+        <div class="container-lg p-3 mt-1 mx-auto text-light bg-success fs-4">.container-lg - 100% jusqu'à lg</div>
+        <div class="container-xl p-3 mt-1 mx-auto text-light bg-success fs-4">.container-xl - 100% jusqu'à xl</div>
+        <div class="container-xxl p-3 mt-1 mx-auto mb-5 text-light bg-success fs-4">.container-xxl - 100% jusqu'à xxl</div>
 
 
-
+         <hr class="mt-5" style="border: 2px solid blue" />
         <h2 class="display-6 mb-3 text-center">Nos premières grilles.</h2>
-        <!-- [row] utilise flexbox sous le capot -->
-        <!-- col divise l'espace disponible entre les éléments, ici 33% pour chaque colonne -->
-        <!-- Attention ! Les marges peuvent créer de l'espace supplémentaire, d'où l'utilisation des gouttières un peu plus tard. -->
-
+        <p class="container p-3 fs-3"><span class="fw-bold">row</span> = grille = flexbox sous le capot</p>
+        <p class="container p-3 fs-3"><span class="fw-bold">col</span> divise l'espace disponible entre les éléments, ici 33% pour chaque colonne</p>
+        <p class="container p-3 fs-3"><span class="fw-bold">g</span>  gouttières de séparation - g-0 / 1 / 2 / 3 / 4 / 5</p>
+        <p class="container p-3 fs-3">Attention, éviter d'ajouter des marges qui peuvent créer de l'espace supplémentaire, d'où l'utilisation</p>
+        <!--  -->
+        
         <div class="container mb-5">
-
-            <div class="bg-dark">
-                <div class="">
+            
+            <p class="container p-3 fs-3">3 colonnes</p>
+            <div class="row g-3 bg-dark">
+                <div class="col">
                     <p class="p-3 border border-light bg-primary text-light">
                         Col 33%
                     </p>
                 </div>
-                <div class="">
-                    <p class="p-3 border border-light bg-primary text-light">
+                <div class="col">
+                    <p class=" p-3 border border-light bg-primary text-light">
                         Col 33%
                     </p>
                 </div>
-                <div class="">
-                    <p class="p-3 border border-light bg-primary text-light">
+                <div class="col">
+                    <p class=" p-3 border border-light bg-primary text-light">
                         Col 33%
                     </p>
                 </div>
             </div>
-
-            <div class="row mt-3">
+            
+            <p class="container mt-5 p-3 fs-3">2 colonnes</p>
+            <div class="row mt-3 bg-info">
                 <div class="col">
                     <p class="p-3 border border-light bg-primary text-light">
                         Col 50%
@@ -112,7 +117,8 @@
                 </div>
             </div>
 
-            <div class="row mt-3">
+            <p class="container mt-5 p-3 fs-3">6 colonnes</p>
+            <div class="row mt-3 bg-secondary">
                 <div class="col">
                     <p class="p-3 border border-light bg-primary text-light">
                         Col
@@ -145,44 +151,47 @@
                 </div>
             </div>
     
-
-        <h2 class="display-6 mb-3 mt-5 text-center">Définir la taille des colonnes.</h2>
         <!-- Définir la largeur de l'élément en lui faisant prendre X nombre de colonnes -->
         <!-- [col-1|12] -->
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3 mt-5 text-center">Définir la taille des colonnes.</h2>
+        <p class="fs-3">Les col-1 -> 12</p>
+        <p class="fs-3">La somme des colonnes des éléments doit être = 12</p>
+        <p class="fs-3">On définit la largeur d'élément en lui faisant prendre X nombre de colonnes</p>
 
    
             <div class="row">
-                <div class="">
+                <div class="col-3">
                     <p class="p-3 border border-light bg-primary text-light">
-                        Du contenu
+                        col-3
                     </p>
                 </div>
-                <div class="">
-                    <p class="p-3 border border-light bg-primary text-light">
-                        Du contenu
+                <div class="col-4">
+                    <p class=" p-3 border border-light bg-primary text-light">
+                        col-4
                     </p>
                 </div>
-                <div class="">
+                <div class="col-5">
                     <p class="p-3 border border-light bg-primary text-light">
-                        Du contenu
+                        col-5
                     </p>
                 </div>
             </div>
         </div>
 
 
-        
-        <h2 class="display-6 mb-3 text-center">Largeur naturelle.</h2>
         <!-- [col-auto] -->
-
         <div class="container">
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3 text-center">Largeur naturelle - col-auto</h2>
+        <p class="fs-3">S'adapte à la largeur du contenu</p>
 
-            <div class="row">
+            <div class="row bg-info">
                 <div class="col-3 p-3 border border-light bg-dark text-light">
                     Je prends 3 colonnes
                 </div>
-                <div class=" p-3 border border-light bg-dark text-light">
-                    Je prends la largeur de mon contenu
+                <div class="col-auto p-3 border border-light bg-dark text-light">
+                    Je prends la largeur de mon contenu et le reste
                 </div>
                 <div class="col-3 p-3 border border-light bg-dark text-light">
                     Je prends 3 colonnes
