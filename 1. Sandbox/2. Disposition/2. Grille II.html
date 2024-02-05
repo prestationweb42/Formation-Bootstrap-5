@@ -46,11 +46,11 @@
     <!-- On repart avec un container global-->
     <div class="container p-5 mb-5">
 
-
-        <h2 class="display-6 mb-3">Les "Breakpoints"</h2>
-        <!-- [col-sm[md|lg|xl|xxl]-[2|4|6|... 12]] -->
-        <div class="row mb-5">
-            <div class="col-12 col-sm-10 col-md-8 col-xl-6 col-xxl-4">
+        <h2 class="display-6 mb-3">Les "Breakpoints" pour le responsive</h2>
+        <p class="fs-3">col-sm / md / lg / xl / xxl - 2 / 4 / 6 ... 12</p>
+        <!--  -->
+        <div class="row g-2 justify-content-center mb-5">
+            <div class="col-12 col-sm-10 col-md-8 col-xl-6 col-xxl-4 ">
                 <p class="w-100 h-100 p-3 border border-light bg-dark text-light">
                     Mon nombre de colonnes change suivant la largeur d'écran
                 </p>
@@ -67,8 +67,10 @@
             </div>
         </div>
 
-        <h2 class="display-6 mb-3">Imbrication</h2>
+
         <!-- Création de deux colonnes seulement, directement au niveau de la rangée -->
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3">Imbrication</h2>
 
         <div class="row mb-5">
             <div class="col-3">
@@ -97,17 +99,26 @@
             </div>
         </div>
 
-
+        <hr class="mt-5" style="border: 2px solid blue" />
         <h2 class="display-6 mb-3">Nombres de colonnes pré-définies</h2>
-        <!-- [row-cols-1|2|4|6|...max 12] -->
-        <!-- Pour le responsive -->
-        <!-- [row-cols-sm[md|lg|xl|xxl]-[1|2|3|... 12]] -->
+        <p class="fs-3">Permet d'indiquer directement dans le parent le nombre de col</p>
+        <p class="fs-3">row-cols-1 / 2 / 4 / 6 ...max 12</p>
+        <p class="fs-3">Pour le responsive : row-cols-sm / md / lg / xl / xxl - 1 / 2 / 3 ... 12]</p>
 
-        <div class="row  mb-5">
-            <p class="p-3 border border-light bg-primary text-light">Column</p>
-            <p class="p-3 border border-light bg-primary text-light">Column</p>
-            <p class="p-3 border border-light bg-primary text-light">Column</p>
-            <p class="p-3 border border-light bg-primary text-light">Column</p>
+        <p class="fs-3">Exemple : row row-cols-2</p>
+        <div class="row row-cols-2 bg-info  mb-5" style="height: 300px;">
+            <p class="p-3 h-25 border border-light bg-primary text-light">Column</p>
+            <p class="p-3 h-25 border border-light bg-primary text-light">Column</p>
+            <p class="p-3 h-25 border border-light bg-primary text-light">Column</p>
+            <p class="p-3 h-25 border border-light bg-primary text-light">Column</p>
+        </div>
+
+        <p class="fs-3">Exemple : row row-cols-4</p>
+        <div class="row row-cols-4 bg-info  mb-5" style="height: 200px;">
+            <p class="p-3 h-25 border border-light bg-primary text-light">Column</p>
+            <p class="p-3 h-25 border border-light bg-primary text-light">Column</p>
+            <p class="p-3 h-25 border border-light bg-primary text-light">Column</p>
+            <p class="p-3 h-25 border border-light bg-primary text-light">Column</p>
         </div>
 
 
