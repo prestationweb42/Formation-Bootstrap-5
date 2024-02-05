@@ -47,59 +47,103 @@
 
     <div class="container py-5">
 
-        <h2 class="display-6 my-5">Display inline/block</h2>
-
-        <!-- display block,inline [d-inline|d-block] -->
-        <!-- On peut gérer le display de manière responsive ! -->
-        <!-- [d-[sm|md|lg|xl]-[block|flex|inline|]...] -->
-
-
-        <div class="bg-dark p-3">
-            <div class="p-2 bg-danger text-white">d-inline</div>
-            <div class="p-2 bg-primary text-white">d-inline</div>
-        </div>
-
-        <h2 class="display-6 my-5">Display none</h2>
-        <!-- display:none  [d-none]  -->
-
-        <p class="">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum.
-            Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos
-            hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere.
-            Cras mattis iudicium purus sit amet fermentum.
-            Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio
-            operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac,
-            sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis
-            iudicium purus sit amet fermentum.
-            Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio
-            operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac,
-            sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis
-            iudicium purus sit amet fermentum.
-        </p>
-
-        
-        <h2 class="display-6 mb-5 mt-5">Display Flex</h2>
-        <!--  [d-flex|inline-flex] -->
-
-        <div class="bg-dark p-3">
-            <div class="">
-                <div class="p-2 bg-primary text-white">Item</div>
-                <div class="p-2 bg-light text-dark">Item</div>
-            </div>
-        </div>
-
-
-        <h2 class="display-6 mb-5 mt-5">Les Positions</h2>
       
+      <!-- display block,inline [d-inline|d-block] -->
+      <!-- On peut gérer le display de manière responsive ! -->
+      <!-- [d-[sm|md|lg|xl]-[block|flex|inline|]...] -->
+      <h2 class="display-6 my-3">Display inline/block</h2>
+        
+        <p class="fs-3">Les éléments sont inline OU block par DEFAUT selon leur catégorie</p> 
+        <div class="bg-dark p-3 mb-3">
+          <div class="p-2 bg-danger text-white fs-3">div = d-block</div>
+          <div class="p-2 bg-primary text-white fs-3">div = d-block</div>
+        </div>
+        <p class="fs-3 mt-5">On peut les display inline et prend ainsi la largeur du contenu</p> 
+        <div class="bg-dark p-3">
+          <div class="p-2 bg-warning text-dark d-inline fs-3">div = .d-inline - div = .d-inline</div>
+          <div class="p-2 bg-info text-dark d-inline fs-3">div = .d-inline</div>
+        </div>
+        <p class="fs-4 mt-5">On peut gérer le display de manière responsive mais attention à l'affichage selon la longueur du contenu !</p> 
+        <p class="fs-3">Exemple : d-inline d-md-block d-lg-inline</p> 
+        <div class="bg-dark p-3">
+          <div class="p-2 bg-success fs-3 text-white d-inline d-md-block d-lg-inline">d-inline d-md-block d-lg-inline</div>
+          <div class="p-2 bg-secondary fs-3 text-white d-inline d-md-block d-lg-inline">d-inline d-md-block d-lg-inline</div>
+        </div>
+        
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <!-- display:none  [d-none]  -->
+        <h2 class="display-6 mb-5">Display none : d-none et responsive</h2>
+        <p class="fs-3">Exemple : d-block d-md-none d-lg-block</p> 
+        
+        <p class="d-block d-md-none d-lg-block">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum.
+          Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos
+          hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere.
+          Cras mattis iudicium purus sit amet fermentum.
+          Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio
+          operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac,
+          sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis
+          iudicium purus sit amet fermentum.
+          Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio
+          operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac,
+          sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis
+          iudicium purus sit amet fermentum.
+        </p>
+        
+        
+        <!--  [d-flex|inline-flex] -->
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3">Display Flex : d-flex/inline-flex</h2>
+        <p class="fs-3">Voir la documentation pour toutes les propriétés flexbox</p>
+        <p class="fs-3">d-flex</p>
+        
+        <div class="bg-dark p-3 mb-3">
+          <div class="d-flex" style="height: 300px;">
+            <div class="h-25 p-2 bg-primary text-white">Item</div>
+            <div class="h-25 p-2 bg-light text-dark">Item</div>
+          </div>
+        </div>
+        <p class="fs-3">d-flex justify-content-center align-items-center</p>
+        <div class="bg-dark p-3 mb-3">
+          <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+            <div class="h-25 p-2 bg-primary text-white">Item</div>
+            <div class="h-25 p-2 bg-light text-dark">Item</div>
+          </div>
+        </div>
+        <p class="fs-3">d-flex justify-content-between align-items-center</p>
+        <div class="bg-dark p-3 mb-3">
+          <div class="d-flex justify-content-between align-items-center" style="height: 300px;">
+            <div class="h-25 p-2 bg-primary text-white">Item</div>
+            <div class="h-25 p-2 bg-light text-dark">Item</div>
+          </div>
+        </div>
+      
+        
+        
+        
         <!-- Les positions [position-static|relative|absolute|fixed|sticky]-->
         <!-- Les placements (top/left/right/bottom) avec [top-0|50|100] -->
         <!-- [translate-middle] ou [translate-middle-x|y] -->
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3">Les Positions</h2>
+        <p class="fs-3 text-decoration-underline">Les positions : position-static / relative / absolute / fixed / sticky</p>
+        <p class="fs-3 text-decoration-underline">Les placements : top / left / right / bottom avec top-0 / 50 / 100</p>
+        <p class="fs-3 text-decoration-underline">Le centrage avec : translate-middle ou translate-middle-x/y</p>
+        <p class="fs-3">Exemple : idem qu'en CSS, le parent en position-relative</p>
+        <p class="fs-3">Et les enfants  position-absolute / position-fixed / position-sticky en %</p>
+        <p class="fs-3"><span class="bg-danger px-2">Danger</span> : position-absolute top-0 start-0</p>
+        <p class="fs-3"><span class="bg-success px-2">Success</span> : position-absolute top-0 end-0</p>
+        <p class="fs-3"><span class="bg-primary px-2">Primary</span> : position-absolute bottom-0 start-0</p>
+        <p class="fs-3"><span class="bg-warning px-2">Warning</span> : position-absolute bottom-0 end-0</p>
+        <p class="fs-3"><span class="bg-dark text-light px-2">Dark 1</span> : position-absolute top-0 start-50 translate-middle-x</p>
+        <p class="fs-3"><span class="bg-dark text-light px-2">Dark 2</span> : position-absolute top-50 start-50 translate-middle</p>
 
-        <div class="" style="height: 200px">
-          <div class="p-3 bg-danger "></div>
-          <div class="p-3 bg-success"></div>
-          <div class="p-3 bg-primary"></div>
-          <div class="p-3 bg-warning"></div>
-          <div class="p-3 bg-dark"></div>
+        <div class="bg-info position-relative" style="height: 400px">
+          <div class="p-3 bg-danger position-absolute top-0 start-0">Danger</div>
+          <div class="p-3 bg-success position-absolute top-0 end-0">Success</div>
+          <div class="p-3 bg-primary position-absolute bottom-0 start-0">Primary</div>
+          <div class="p-3 bg-warning position-absolute bottom-0 end-0">Warning</div>
+          <div class="p-3 bg-dark text-light position-absolute top-0 start-50 translate-middle-x">Dark 1</div>
+          <div class="p-3 bg-dark text-light position-absolute top-50 start-50 translate-middle">Dark 2</div>
         </div>
 
 
