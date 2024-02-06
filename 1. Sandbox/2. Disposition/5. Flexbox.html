@@ -1,184 +1,471 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bootstrap Sandbox</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Sandbox</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-</head>
+    <body class="bg-light text-dark">
+        <a
+            href="../home.html"
+            class="btn btn-primary text-light bg-dark btn-outline-dark"
+            >< Retour au Menu</a
+        >
 
-<body class="bg-light text-dark">
-    <a href="../home.html" class="btn btn-primary text-light bg-dark btn-outline-dark">< Retour au Menu</a >
+        <h1 class="text-center mt-5 display-3">Disposition</h1>
+        <h2 class="text-center mb-5 display-5">Flexbox</h2>
 
-    <h1 class="text-center mt-5 display-3">Disposition</h1>
-    <h2 class="text-center mb-5 display-5">Flexbox</h2>
-
-    <div class="container mb-4">
-        <ul class="nav nav-pills justify-content-center row gy-3 gx-3">
-            <li class="nav-item col-12 col-sm-6 col-lg-3 col-xl-2 text-center ">
-                <a class="p-2 d-block h-100 d-flex align-items-center justify-content-center  btn btn-outline-primary"
-                    href="./1. Grille I.html">Grille I</a>
-            </li>
-            <li class="nav-item col-12 col-sm-6 col-lg-3 col-xl-2 text-center">
-                <a class="p-2 d-block h-100 d-flex align-items-center justify-content-center    btn btn-outline-primary"
-                    href="./2. Grille II.html">Grille II</a>
-            </li>
-            <li class="nav-item col-12 col-sm-6 col-lg-3 col-xl-2 text-center">
-                <a class="p-2 d-block h-100 d-flex align-items-center justify-content-center    btn btn-outline-primary"
-                    href="./3. Colonnes.html">Colonnes</a>
-            </li>
-            <li class="nav-item col-12 col-sm-6 col-lg-3 col-xl-2 text-center">
-                <a class="p-2 d-block h-100 d-flex align-items-center justify-content-center    btn btn-outline-primary"
-                    href="./4. Gouttières.html">Gouttières</a>
-            </li>
-            <li class="nav-item col-12 col-sm-6 col-lg-3 col-xl-2 text-center">
-                <a class="p-2 d-block h-100 d-flex align-items-center justify-content-center    btn btn-primary"
-                    href="./5. Flexbox.html">Flexbox</a>
-            </li>
-        </ul>
-    </div>
-    <hr>
-    <!-- Début de la leçon -->
-    <div class="container p-5 mb-5">
-
-        <h2 class="display-6 mb-3">Utiliser Flexbox sans le système de Grille.</h2>
-        <!-- [d-flex]/ [d-inline-flex] -->
-        <!-- on peut aussi changer le display de manière réactive -->
-        <!-- Exemple : d-sm-flex, d-lg-flex, etc ... -->
-        <!-- Il existe ce genre de classes réactives pour toutes les propriétés liées à Flexbox. -->
-
-        <div class="bg-success p-5 mb-5">
-            <h1 class="text-dark bg-warning p-1">Hello World</h1>
+        <div class="container mb-4">
+            <ul class="nav nav-pills justify-content-center row gy-3 gx-3">
+                <li
+                    class="nav-item col-12 col-sm-6 col-lg-3 col-xl-2 text-center"
+                >
+                    <a
+                        class="p-2 d-block h-100 d-flex align-items-center justify-content-center btn btn-outline-primary"
+                        href="./1. Grille I.html"
+                        >Grille I</a
+                    >
+                </li>
+                <li
+                    class="nav-item col-12 col-sm-6 col-lg-3 col-xl-2 text-center"
+                >
+                    <a
+                        class="p-2 d-block h-100 d-flex align-items-center justify-content-center btn btn-outline-primary"
+                        href="./2. Grille II.html"
+                        >Grille II</a
+                    >
+                </li>
+                <li
+                    class="nav-item col-12 col-sm-6 col-lg-3 col-xl-2 text-center"
+                >
+                    <a
+                        class="p-2 d-block h-100 d-flex align-items-center justify-content-center btn btn-outline-primary"
+                        href="./3. Colonnes.html"
+                        >Colonnes</a
+                    >
+                </li>
+                <li
+                    class="nav-item col-12 col-sm-6 col-lg-3 col-xl-2 text-center"
+                >
+                    <a
+                        class="p-2 d-block h-100 d-flex align-items-center justify-content-center btn btn-outline-primary"
+                        href="./4. Gouttières.html"
+                        >Gouttières</a
+                    >
+                </li>
+                <li
+                    class="nav-item col-12 col-sm-6 col-lg-3 col-xl-2 text-center"
+                >
+                    <a
+                        class="p-2 d-block h-100 d-flex align-items-center justify-content-center btn btn-primary"
+                        href="./5. Flexbox.html"
+                        >Flexbox</a
+                    >
+                </li>
+            </ul>
         </div>
+        <hr />
+        <!-- Début de la leçon -->
+        <div class="container p-5 mb-5">
+            <h2 class="display-6 mb-3">
+                Utiliser Flexbox sans le système de Grille.
+            </h2>
+            <p class="fs-3">[d-flex]/ [d-inline-flex]</p>
+            <p class="fs-3">On peut aussi changer le display de manière réactive</p>
+            <p class="fs-3">Exemple : d-sm-flex, d-lg-flex, etc ...</p>
+            <p class="fs-3">Il existe ce genre de classes réactives pour toutes les propriétés liées à Flexbox.</p>
 
+            <p class="fs-3">Exemple 1 : Sans flexbox</p>
+            <div class="bg-success p-5 mb-5">
+                <h1 class="text-dark bg-warning p-1">Hello World</h1>
+            </div>
+            <p class="fs-3 lh-sm">
+                Exemple 2 : avec flexbox -> d-flex -> l'enfant devient un item
+                flexible et ne prend que l'espace de son contenu, ici h1
+            </p>
+            <div class="bg-success p-5 mb-5 d-flex">
+                <h1 class="text-dark bg-warning p-1">Hello World</h1>
+            </div>
 
-        <h2 class="display-6 mb-3">Gérer l'alignement sur le main axis (x de base)</h2>
-        <!-- [justify-content-start|end|center|between|around|evenly] -->
+            <!-- main axis -->
+            <hr class="mt-5" style="border: 2px solid blue" />
+            <h2 class="display-6 mb-3">
+                Gérer l'alignement sur le main axis (x de base)
+            </h2>
+            <p class="fs-3 lh-sm">
+                justify-content-start / end / center / between / around / evenly
+            </p>
 
-        <div class="d-flex bg-dark p-3 mb-5">
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
+            <p class="fs-3">Exemple : d-flex justify-content-start</p>
+            <div class="d-flex justify-content-start bg-dark p-3 mb-5">
+                <p class="text-light bg-success m-1 p-1">justify-content-start</p>
+                <p class="text-dark bg-light m-1 p-1">justify-content-start</p>
+                <p class="text-dark bg-danger m-1 p-1">justify-content-start</p>
+            </div>
+            <p class="fs-3">Exemple : d-flex justify-content-center</p>
+            <div class="d-flex justify-content-center bg-dark p-3 mb-5">
+                <p class="text-light bg-success m-1 p-1">justify-content-center</p>
+                <p class="text-dark bg-light m-1 p-1">justify-content-center</p>
+                <p class="text-dark bg-danger m-1 p-1">justify-content-center</p>
+            </div>
+            <p class="fs-3">Exemple : d-flex justify-content-end</p>
+            <div class="d-flex justify-content-end bg-dark p-3 mb-5">
+                <p class="text-light bg-success m-1 p-1">justify-content-end</p>
+                <p class="text-dark bg-light m-1 p-1">justify-content-end</p>
+                <p class="text-dark bg-danger m-1 p-1">justify-content-end</p>
+            </div>
+            <p class="fs-3">Exemple : d-flex justify-content-between</p>
+            <div class="d-flex justify-content-between bg-dark p-3 mb-5">
+                <p class="text-light bg-success m-1 p-1">justify-content-between</p>
+                <p class="text-dark bg-light m-1 p-1">justify-content-between</p>
+                <p class="text-dark bg-danger m-1 p-1">justify-content-between</p>
+            </div>
+            <p class="fs-3">Exemple : d-flex justify-content-around</p>
+            <div class="d-flex justify-content-around bg-dark p-3 mb-5">
+                <p class="text-light bg-success m-1 p-1">justify-content-around</p>
+                <p class="text-dark bg-light m-1 p-1">justify-content-around</p>
+                <p class="text-dark bg-danger m-1 p-1">justify-content-around</p>
+            </div>
+            <p class="fs-3">Exemple : d-flex justify-content-evenly</p>
+            <div class="d-flex justify-content-evenly bg-dark p-3 mb-5">
+                <p class="text-light bg-success m-1 p-1">justify-content-evenly</p>
+                <p class="text-dark bg-light m-1 p-1">justify-content-evenly</p>
+                <p class="text-dark bg-danger m-1 p-1">justify-content-evenly</p>
+            </div>
+
+            <!-- cross axis -->
+            <hr class="mt-5" style="border: 2px solid blue" />
+            <h2 class="display-6 mb-3">
+                Gérer l'alignement sur le cross axis (y de base)
+            </h2>
+            <p class="fs-3 lh-sm">
+                align-items-start / end / center / baseline / strech
+            </p>
+            <p class="fs-3">Exemple : d-flex align-items-start</p>
+            <div
+                class="d-flex align-items-start bg-dark p-3 mb-5"
+                style="height: 200px"
+            >
+                <p class="text-dark bg-light m-1 p-1">align-items-start</p>
+                <p class="text-dark bg-light m-1 p-1">align-items-start</p>
+                <p class="text-dark bg-light m-1 p-1">align-items-start</p>
+            </div>
+            <p class="fs-3">Exemple : d-flex align-items-center</p>
+            <div
+                class="d-flex align-items-center bg-dark p-3 mb-5"
+                style="height: 200px"
+            >
+                <p class="text-dark bg-light m-1 p-1">align-items-center</p>
+                <p class="text-dark bg-light m-1 p-1">align-items-center</p>
+                <p class="text-dark bg-light m-1 p-1">align-items-center</p>
+            </div>
+            <p class="fs-3">Exemple : d-flex align-items-end</p>
+            <div
+                class="d-flex align-items-end bg-dark p-3 mb-5"
+                style="height: 200px"
+            >
+                <p class="text-dark bg-light m-1 p-1">align-items-end</p>
+                <p class="text-dark bg-light m-1 p-1">align-items-end</p>
+                <p class="text-dark bg-light m-1 p-1">align-items-end</p>
+            </div>
+            <p class="fs-3">Exemple : d-flex align-items-baseline</p>
+            <div
+                class="d-flex align-items-baseline bg-dark p-3 mb-5"
+                style="height: 200px"
+            >
+                <p class="text-dark bg-light m-1 p-1">align-items-baseline</p>
+                <p class="text-dark bg-light m-1 p-1">align-items-baseline</p>
+                <p class="text-dark bg-light m-1 p-1">align-items-baseline</p>
+            </div>
+            <p class="fs-3">Exemple : d-flex align-items-strech</p>
+            <div
+                class="d-flex align-items-strech bg-dark p-3 mb-5"
+                style="height: 200px"
+            >
+                <p class="text-dark bg-light m-1 p-1">align-items-strech</p>
+                <p class="text-dark bg-light m-1 p-1">align-items-strech</p>
+                <p class="text-dark bg-light m-1 p-1">align-items-strech</p>
+            </div>
+
+            <!-- rangée / colonne -->
+            <hr class="mt-5" style="border: 2px solid blue" />
+            <h2 class="display-6 mb-3">Gérer la direction rangée / colonne</h2>
+            <p class="fs-3">d-flex flex-row / column / row-reverse / column-reverse</p> 
+            
+            <p class="fs-3">Exemple : d-flex flex-row (par défaut en ligne)</p> 
+            <div class="d-flex flex-row bg-dark p-3 mb-5" style="height: 200px">
+                <p class="text-dark bg-primary m-1 p-1">Colonne 1</p>
+                <p class="text-dark bg-light m-1 p-1">Colonne 2</p>
+                <p class="text-dark bg-danger m-1 p-1">Colonne 3</p>
+            </div>
+            <p class="fs-3">Exemple : d-flex flex-row-reverse</p> 
+            <div class="d-flex flex-row-reverse bg-dark p-3 mb-5" style="height: 200px">
+                <p class="text-dark bg-primary m-1 p-1">Colonne 1</p>
+                <p class="text-dark bg-light m-1 p-1">Colonne 2</p>
+                <p class="text-dark bg-danger m-1 p-1">Colonne 3</p>
+            </div>
+             
+            <p class="fs-3">Exemple : d-flex flex-column</p> 
+            <div class="d-flex flex-column bg-dark p-3 mb-5" style="height: 200px">
+                <p class="text-dark bg-primary m-1 p-1">Colonne 1</p>
+                <p class="text-dark bg-light m-1 p-1">Colonne 2</p>
+                <p class="text-dark bg-danger m-1 p-1">Colonne 3</p>
+            </div>
+            <p class="fs-3">Exemple : d-flex flex-column-reverse</p> 
+            <div class="d-flex flex-column-reverse bg-dark p-3 mb-5" style="height: 200px">
+                <p class="text-dark bg-primary m-1 p-1">Colonne 1</p>
+                <p class="text-dark bg-light m-1 p-1">Colonne 2</p>
+                <p class="text-dark bg-danger m-1 p-1">Colonne 3</p>
+            </div>
+            
+            <!-- Aligner un élément -->
+            <hr class="mt-5" style="border: 2px solid blue" />
+            <h2 class="display-6 mb-3">Aligner un élément -> enfant : align-self</h2>
+            <p class="fs-3">align-self-start|end|center|baseline...</p>
+            
+            <p class="fs-3">Exemple : align-self-start</p>
+            <div class="d-flex bg-dark p-3 mb-5" style="height: 200px">
+                <p class="align-self-start text-light bg-success m-1 p-1 fs-3">align-self-start</p>
+                <p class="align-self-center text-dark bg-light m-1 p-1 fs-3">align-self-center</p>
+                <p class="align-self-end text-light bg-danger m-1 p-1 fs-3">align-self-end</p>
+                <p class="align-self-baseline text-dark bg-warning m-1 p-1 fs-3">align-self-baseline</p>
+                <p class="align-self-strech text-dark bg-info m-1 p-1 fs-3">align-self-strech</p>
+            </div>
+            
+            <!-- Remplir avec fill -->
+            <hr class="mt-5" style="border: 2px solid blue" />
+            <h2 class="display-6 mb-3">Remplir avec fill -> sur un enfant - flex-fill</h2>
+            
+            <p class="fs-3">Exemple : flex-fill sur col 1 -> donne flex: 1 1 auto;</p>
+            <div class="d-flex bg-dark align-items-center p-3 mb-5">
+                <p class="flex-fill text-dark bg-primary m-1 p-1 fs-3">Col 1</p>
+                <p class="text-dark bg-light m-1 p-1 fs-3">Col 2</p>
+                <p class="text-dark bg-warning m-1 p-1 fs-3">Col 3</p>
+            </div>
+            
+            <!-- Flex-grow -->
+            <hr class="mt-5" style="border: 2px solid blue" />
+            <h2 class="display-6 mb-3">Gérer Flex-grow</h2>
+            <p class="fs-3">flex-grow-0|1|2...</p>
+            
+            <p class="fs-3">Exemple : sans flex-grow</p>
+            <div class="d-flex bg-dark p-3 mb-5">
+                <p class="text-dark bg-primary m-1 p-1 fs-3">
+                    Col 1
+                </p>
+                <p class="text-dark bg-light m-1 p-1 fs-3">Col 2</p>
+                <p class="text-dark bg-warning m-1 p-1 fs-3">Col 3</p>
+            </div>
+            <p class="fs-3">Exemple : flex-grow-1 sur Col 1 -> même résultat que flex-fill</p>
+            <div class="d-flex bg-dark p-3 mb-5">
+                <p class="flex-grow-1 text-dark bg-primary m-1 p-1 fs-3 text-center">
+                    Col 1
+                </p>
+                <p class="text-dark bg-light m-1 p-1 fs-3 text-center">Col 2</p>
+                <p class="text-dark bg-warning m-1 p-1 fs-3 text-center">Col 3</p>
+            </div>
+            <p class="fs-3">Exemple : flex-grow-1 sur Col 1 et Col 3 -> même résultat que flex-fill</p>
+            <div class="d-flex bg-dark p-3 mb-5">
+                <p class="flex-grow-1 text-dark bg-primary m-1 p-1 fs-3 text-center">
+                    Col 1
+                </p>
+                <p class="text-dark bg-light m-1 p-1 fs-3 text-center">Col 2</p>
+                <p class="flex-grow-1 bg-warning m-1 p-1 fs-3 text-center">Col 3</p>
+            </div>
+            <p class="fs-3">Exemple : flex-grow-1 sur Col 1 - 2 et Col 3 -> même résultat que flex-fill</p>
+            <div class="d-flex bg-dark p-3 mb-5">
+                <p class="flex-grow-1 text-dark bg-primary m-1 p-1 fs-3 text-center">
+                    Col 1
+                </p>
+                <p class="flex-grow-1 bg-light m-1 p-1 fs-3 text-center">Col 2</p>
+                <p class="flex-grow-1 bg-warning m-1 p-1 fs-3 text-center">Col 3</p>
+            </div>
+            
+            <!-- Flex-Shrink -->
+            <hr class="mt-5" style="border: 2px solid blue" />
+            <h2 class="display-6 mb-3">Gérer Flex-Shrink -> flex-shrink-0|1</h2>
+            <p class="fs-3">De base les éléments sont flex-shrink = 1 -> donc peuvent se réduire</p>
+            <p class="fs-3">Pour ne pas se réduire : flex-shrink = 0</p>
+            
+            <p class="fs-3">Exemple : flex-shrink-0 sur colonne 1</p>
+            <div class="d-flex bg-dark p-3 mb-5">
+                <p style="width: 300px" class="flex-shrink-0 bg-light m-1 p-1 fs-3">
+                    flex-shrink-0
+                </p>
+                <p style="width: 300px" class="text-dark bg-light m-1 p-1 fs-3">
+                    flex-shrink-1
+                </p>
+            </div>
+            
+            <!-- marges automatiques horizontales -->
+            <hr class="mt-5" style="border: 2px solid blue" />
+            <h2 class="display-6 mb-3">Les marges automatiques horizontales - me|ms-auto </h2>
+            <p class="fs-3">Même fonctionnement que dans la leçon Taille et Espacement mais avec d-flex</p>
+            
+            <p class="fs-3">Exemple : ms-auto sur colonne 2</p>
+            <div class="d-flex bg-dark p-3 mb-5">
+                <p class="text-dark bg-light m-1 p-1 fs-4">Colonne 1</p>
+                <p class="ms-auto text-dark bg-light m-1 p-1 fs-4">Colonne 2</p>
+            </div>
+            
+            <!-- marges automatiques verticales -->
+            <hr class="mt-5" style="border: 2px solid blue" />
+            <h2 class="display-6 mb-3">Les marges automatiques verticales - mt|mb-auto</h2>
+            <p class="fs-3">Même fonctionnement que dans la leçon Taille et Espacement mais avec d-flex</p>
+            
+            <p class="fs-3">Exemple : mt-auto sur colonne 2</p>
+            <div
+            class="d-flex flex-column bg-dark p-3 mb-5"
+            style="height: 400px"
+            >
+            <p class="text-dark bg-light m-1 p-1 fs-4">Colonne 1</p>
+            <p class="mt-auto text-dark bg-light m-1 p-1 fs-4">Colonne 2</p>
         </div>
-
-
-        <h2 class="display-6 mb-3">Gérer l'alignement sur le cross axis (y de base)</h2>
-        <!-- [align-items-start|end|center|baseline|strech] -->
-
-        <div class="d-flex bg-dark p-3 mb-5" style="height: 200px">
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-        </div>
-
-        <h2 class="display-6 mb-3">Gérer la direction rangée / colonne</h2>
-        <!-- [flex-row|column|row-reverse|column-reverse] -->
-
-
-        <div class="d-flex  bg-dark p-3 mb-5" style="height: 200px">
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-        </div>
-
-
-        <h2 class="display-6 mb-3">Aligner un élément : Align self</h2>
-        <!-- [align-self-start|end|center|baseline...] -->
-
-
-        <div class="d-flex bg-dark p-3 mb-5" style="height: 200px">
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-        </div>
-
-
-        <h2 class="display-6 mb-3">Remplir avec fill</h2>
-        <!-- [flex-fill] -->
-        <!-- donne flex: 1 1 auto; -->
-
-        <div class="d-flex bg-dark align-items-center p-3 mb-5">
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-        </div>
-
-
-        <h2 class="display-6 mb-3">Gérer Flex-grow</h2>
-        <!-- [flex-grow-0|1|2...] -->
-
-        <div class="d-flex bg-dark  p-3 mb-5">
-            <p class="flex-grow-1 text-dark bg-light m-1 p-1">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-        </div>
-
-        <h2 class="display-6 mb-3">Gérer Flex-Shrink</h2>
-        <!-- [flex-shrink-0|1] -->
-
-        <div class="d-flex bg-dark p-3 mb-5">
-            <p style="width: 300px" class="text-dark bg-light m-1 p-1">Hello World</p>
-            <p style="width: 300px" class="text-dark  bg-light m-1 p-1">Lorem ipsum dolor sit amet.</p>
-        </div>
-
-
-        <h2 class="display-6 mb-3">Les marges automatiques horizontales</h2>
-        <!-- [me|ms-auto] -->
-
-        <div class="d-flex bg-dark p-3 mb-5">
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-        </div>
-
         
-        <h2 class="display-6 mb-3">Les marges automatiques verticales</h2>
-        <!-- [mt|mb-auto] -->
-
-        <div class="d-flex flex-column bg-dark p-3 mb-5" style="height: 400px">
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1">Hello World</p>
+        
+        <!-- Wrapper les éléments -->
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3">
+            Wrapper les éléments si il n'y a plus de place - flex-wrap|nowrap
+        </h2>
+        <p class="fs-3">Par défaut : flex-nowrap </p>
+        
+        <p class="fs-3">Exemple : sans flex-wrap -> les éléments se compriment les uns sur les autres</p>
+            <div class="d-flex bg-dark p-3 mb-5" style="width: 400px">
+                <p class="text-dark bg-light m-1 p-1" style="width: 200px">
+                    Hello World
+                </p>
+                <p class="text-dark bg-light m-1 p-1" style="width: 200px">
+                    Hello World
+                </p>
+                <p class="text-dark bg-light m-1 p-1" style="width: 200px">
+                    Hello World
+                </p>
+                <p class="text-dark bg-light m-1 p-1" style="width: 200px">
+                    Hello World
+                </p>
+                <p class="text-dark bg-light m-1 p-1" style="width: 200px">
+                    Hello World
+                </p>
+            </div>
+            <p class="fs-3">Exemple : d-flex flex-wrap -> les éléments ont 200px de large et peuvent prendre leur place en passant à la ligne</p>
+            <div class="d-flex flex-wrap bg-dark p-3 mb-5" style="width: 400px">
+                <p class="text-dark bg-light m-1 p-1" style="width: 200px">
+                    Hello World
+                </p>
+                <p class="text-dark bg-light m-1 p-1" style="width: 200px">
+                    Hello World
+                </p>
+                <p class="text-dark bg-light m-1 p-1" style="width: 200px">
+                    Hello World
+                </p>
+                <p class="text-dark bg-light m-1 p-1" style="width: 200px">
+                    Hello World
+                </p>
+                <p class="text-dark bg-light m-1 p-1" style="width: 200px">
+                    Hello World
+                </p>
+            </div>
+            
+            <!-- ordre des éléments -->
+            <hr class="mt-5" style="border: 2px solid blue" />
+            <h2 class="display-6 mb-3">Changer l'ordre des éléments -> order-1|2|3..</h2> 
+            <p class="fs-3">Les éléments sont inversés</p>
+            
+            <div class="d-flex flex-wrap bg-dark p-3 mb-5">
+                <p class="order-5 text-dark bg-light m-1 p-1 fs-4">Order 1</p>
+                <p class="order-4 text-dark bg-light m-1 p-1 fs-4">Order 2</p>
+                <p class="order-3 text-dark bg-light m-1 p-1 fs-4">Order 3</p>
+                <p class="order-2 text-dark bg-light m-1 p-1 fs-4">Order 4</p>
+                <p class="order-1 text-dark bg-light m-1 p-1 fs-4">Order 5</p>
+            </div>
+            
+            <!-- Align content -->
+            <hr class="mt-5" style="border: 2px solid blue" />
+            <h2 class="display-6 mb-3">Et pour finir Align content : align-content-center|start|end|between|strech|etc...</h2>
+            <p class="fs-3">Cette propriété sert à gérer l'alignement du contenu qui est passé à la ligne : ressemble à align-items</p>
+            
+            <p class="fs-3">Pour voir correctement les placements, il faut passer en dessous de <span class="text-danger fw-bold">768px</span> de large</p>
+            <p class="fs-3">Exemple : juste avec flex-wrap</p>
+            <div
+                class="d-flex flex-wrap bg-dark p-3 mb-5"
+                style="height: 400px"
+            >
+                <p class="text-dark bg-light m-1 p-1" style="width: 250px">
+                    Hello World
+                </p>
+                <p class="text-dark bg-light m-1 p-1" style="width: 250px">
+                    Hello World
+                </p>
+                <p class="text-dark bg-light m-1 p-1" style="width: 250px">
+                    Hello World
+                </p>
+                <p class="text-dark bg-light m-1 p-1" style="width: 250px">
+                    Hello World
+                </p>
+            </div>
+            <p class="fs-3">Exemple : d-flex flex-wrap align-content-center</p>
+            <div
+                class="d-flex flex-wrap align-content-center bg-dark p-3 mb-5"
+                style="height: 400px"
+            >
+                <p class="text-dark bg-light m-1 p-1" style="width: 250px">
+                    Hello World
+                </p>
+                <p class="text-dark bg-light m-1 p-1" style="width: 250px">
+                    Hello World
+                </p>
+                <p class="text-dark bg-light m-1 p-1" style="width: 250px">
+                    Hello World
+                </p>
+                <p class="text-dark bg-light m-1 p-1" style="width: 250px">
+                    Hello World
+                </p>
+            </div>
+            <p class="fs-3">Exemple : d-flex flex-wrap align-content-end</p>
+            <div
+                class="d-flex flex-wrap align-content-end bg-dark p-3 mb-5"
+                style="height: 400px"
+            >
+                <p class="text-dark bg-light m-1 p-1" style="width: 250px">
+                    Hello World
+                </p>
+                <p class="text-dark bg-light m-1 p-1" style="width: 250px">
+                    Hello World
+                </p>
+                <p class="text-dark bg-light m-1 p-1" style="width: 250px">
+                    Hello World
+                </p>
+                <p class="text-dark bg-light m-1 p-1" style="width: 250px">
+                    Hello World
+                </p>
+            </div>
+            <p class="fs-3">Exemple : d-flex flex-wrap align-content-between</p>
+            <div
+                class="d-flex flex-wrap align-content-between bg-dark p-3 mb-5"
+                style="height: 400px"
+            >
+                <p class="text-dark bg-light m-1 p-1" style="width: 250px">
+                    Hello World
+                </p>
+                <p class="text-dark bg-light m-1 p-1" style="width: 250px">
+                    Hello World
+                </p>
+                <p class="text-dark bg-light m-1 p-1" style="width: 250px">
+                    Hello World
+                </p>
+                <p class="text-dark bg-light m-1 p-1" style="width: 250px">
+                    Hello World
+                </p>
+            </div>
         </div>
-
-
-        <h2 class="display-6 mb-3">Wrapper les éléments si il n'y a plus de place</h2>
-        <!-- [flex-wrap|nowrap] -->
-
-        <div class="d-flex bg-dark p-3 mb-5" style="width: 400px">
-            <p class="text-dark bg-light m-1 p-1" style="width: 200px;">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1" style="width: 200px;">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1" style="width: 200px;">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1" style="width: 200px;">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1" style="width: 200px;">Hello World</p>
-        </div>
-
-
-        <h2 class="display-6 mb-3">Changer l'ordre des éléments</h2>
-        <!-- [order-1|2|3..] -->
-
-        <div class="d-flex flex-wrap bg-dark p-3 mb-5">
-            <p class="order-5 text-dark bg-light m-1 p-1">Order 1</p>
-            <p class="order-4 text-dark bg-light m-1 p-1">Order 2</p>
-            <p class="order-3 text-dark bg-light m-1 p-1">Order 3</p>
-            <p class="order-2 text-dark bg-light m-1 p-1">Order 4</p>
-            <p class="order-1 text-dark bg-light m-1 p-1">Order 5</p>
-        </div>
-
-
-          
-        <h2 class="display-6 mb-3">Et pour finir : Align content</h2>
-        <!-- Cette propriété sert à gérer l'alignement du contenu qui est passé à la ligne -->
-        <!-- [align-content-center|start|end|etc...] -->
-
-        <div class="d-flex flex-wrap bg-dark p-3 mb-5" style="height: 400px">
-            <p class="text-dark bg-light m-1 p-1" style="width: 250px">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1" style="width: 250px">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1" style="width: 250px">Hello World</p>
-            <p class="text-dark bg-light m-1 p-1" style="width: 250px">Hello World</p>
-        </div>
-    </div>
-</body>
-
+    </body>
 </html>
