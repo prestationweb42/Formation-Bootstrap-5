@@ -46,14 +46,17 @@
     <!-- Début de la leçon -->
     <div class="container p-5 mb-5">
 
-        <h2 class="display-6 mb-3">Créer des décalage de colonnes</h2>
         <!-- [offset-[sm|md|lg|xl|xxl]-[1|2|3...]] -->
         <!-- simple décalage avec offset-1 -->
         <!-- décalage de la gauche à partir de medium avec offset-md-2 -->
-
+        <h2 class="display-6 mb-3">Créer des décalage de colonnes</h2>
+        <p class="fs-3">offset = décalage, à ajouter directement sur les colonnes</p>
+        <p class="fs-3">offset-sm / md / lg / xl / xxl-1 / 2 / 3... 12 (colonnes) pour faire du responsive</p>
+        
+        <p class="fs-3">simple décalage avec offset-1 -> 1 colonne</p>
         <div class="row bg-dark justify-content-start p-5 mb-5">
             
-            <div class="col-5">
+            <div class="col-5 offset-1">
                 <p class="w-100 bg-light p-2 border border-dark">
                     .col-6 .col-sm-3
                 </p>
@@ -63,40 +66,92 @@
                     .col-6 .col-sm-3
                 </p>
             </div>
-
+        </div>
+       
+        <p class="fs-3">décalage avec offset-5 -> 5 colonne</p>
+        <div class="row bg-dark justify-content-start p-5 mb-5">
+            
+            <div class="col-5 offset-5">
+                <p class="w-100 bg-light p-2 border border-dark">
+                    .col-6 .col-sm-3
+                </p>
+            </div>
+            <div class="col-5"> 
+                <p class="w-100 bg-light p-2 border border-dark">
+                    .col-6 .col-sm-3
+                </p>
+            </div>
         </div>
 
 
-
+        <hr class="mt-5" style="border: 2px solid blue" />
         <h2 class="display-6 mb-3">Marges auto</h2>
-        <!-- Décaler facilement les colonnes avec les marges automatiques. -->
-        <!-- [ms-auto] ms => margin start -->
-        <!-- [me-auto] me => margin end -->
-
-
+        <p class="fs-3">Décaler facilement les colonnes avec les marges automatiques.</p>
+        <p class="fs-3">[ms-auto] ms => margin start</p>
+        <p class="fs-3">[me-auto] me => margin end</p>
+        
+        
+        <p class="fs-3">Exemple 1 : ms-auto sur col 1</p>
         <div class="row bg-dark justify-content-start p-5 mb-5">
-            
-            <div class="col-3">
-                <p class="w-100 bg-light p-2 border border-dark">
-                    Col
+            <div class="col-3 ms-auto">
+                <p class="fs-3 w-100 bg-light p-2 border border-dark">
+                    Col 1
                 </p>
             </div>
             <div class="col-3"> 
-                <p class="w-100 bg-light p-2 border border-dark">
-                    Col
+                <p class="fs-3 w-100 bg-light p-2 border border-dark">
+                    Col 2
                 </p>
             </div>
-
+        </div>
+        <p class="fs-3">Exemple 2 : ms-auto sur col 2</p>
+        <div class="row bg-dark justify-content-start p-5 mb-5">
+            <div class="col-3">
+                <p class="fs-3 w-100 bg-light p-2 border border-dark">
+                    Col 1
+                </p>
+            </div>
+            <div class="col-3 ms-auto"> 
+                <p class="fs-3 w-100 bg-light p-2 border border-dark">
+                    Col 2
+                </p>
+            </div>
+        </div>
+        <p class="fs-3">Exemple 2 : me-auto sur col 1</p>
+        <div class="row bg-dark justify-content-start p-5 mb-5">
+            <div class="col-3 me-auto">
+                <p class="fs-3 w-100 bg-light p-2 border border-dark">
+                    Col 1
+                </p>
+            </div>
+            <div class="col-3"> 
+                <p class="fs-3 w-100 bg-light p-2 border border-dark">
+                    Col 2
+                </p>
+            </div>
+        </div>
+        <p class="fs-3">Exemple 2 : me-auto sur col 2 (disposition de départ)</p>
+        <div class="row bg-dark justify-content-start p-5 mb-5">
+            <div class="col-3">
+                <p class="fs-3 w-100 bg-light p-2 border border-dark">
+                    Col 1
+                </p>
+            </div>
+            <div class="col-3 me-auto"> 
+                <p class="fs-3 w-100 bg-light p-2 border border-dark">
+                    Col 2
+                </p>
+            </div>
         </div>
 
 
-
-        <h2 class="display-6 mb-3">Gouttières horizontales</h2>
-        <!-- [gx-1|2|3...] du padding est rajouté à gauche et à droite -->
         <!-- inspectez pour vous en apercevoir. -->
-
-
-        <div class="row mb-5">
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3">Gouttières horizontales</h2>
+        <p class="fs-3">gx-1 / 2 / 3 / 4 / 5 du padding est rajouté à <span class="text-danger fw-bold">gauche</span> et à <span class="text-danger fw-bold">droite</span></p>
+        
+        <p class="fs-3">Exemple : gx-1</p>
+        <div class="row gx-1 mb-5">
             <div class="col">
                 <p class="p-3 bg-warning border">Les gouttières</p>
             </div>
@@ -104,14 +159,16 @@
                 <p class="p-3 bg-warning border">Les gouttières</p>
             </div>
         </div>
-
-
-        <h2 class="display-6 mb-3">Gouttières Verticales</h2>
+        
         <!-- [gy-1|2|3...5] de la marge est rajoutée en haut et en bas -->
         <!-- inspectez pour vous en apercevoir. -->
         <!-- N'oubliez pas qu'il y a des bordures avec "border", enlevez cette classe si vous voulez coller les éléments. -->
-
-        <div class="row gx-0 mb-5">
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3">Gouttières Verticales</h2>
+        <p class="fs-3">gy-1 / 2 ... / 5 de la marge est rajoutée en <span class="text-danger fw-bold">haut</span> et en <span class="text-danger fw-bold">bas</span></p>
+        <p class="fs-3">Attention aux potentielles marges en bas ajoutées par les éléments comme un p</p> 
+        <p class="fs-3">Exemple : gx-2 gy-5 </p>
+        <div class="row gy-5 gx-2 mb-5">
             <div class="col-6">
                 <p class="p-3 mb-0 border bg-warning">Les gouttières</p>
             </div>
@@ -126,31 +183,29 @@
             </div>
         </div>
 
-
+        <hr class="mt-5" style="border: 2px solid blue" />
         <h2 class="display-6 mb-3">Gouttières Horizontales et verticales</h2>
-        <!-- [g-1|2|3...] padding + margin sont rajoutés -->
+        <p class="fs-3">g-1 / 2 ... / 5 padding + margin sont rajoutés</p> 
 
-        <!-- Gouttières responsive -->
-        <!-- [g-[sm-md]-[1|2|3]] padding + margin sont rajoutés -->
-        <!-- g-0 pour annuler de potentielles goutières -->
+        <p class="fs-3">Gouttières responsive : g-[sm-md]-[1|2|3]] padding + margin sont rajoutés</p>
+        <p class="fs-3">Note : g-0 pour annuler de potentielles goutières</p> 
+        <p class="fs-3">Attention aux potentielles marges en bas ajoutées par les éléments comme un p</p> 
 
-
-        <div class="row  mb-5">
+        <p class="fs-3">Exemple : g-3</p>
+        <div class="row g-3">
             <div class="col-6">
-                <p class="p-3 border bg-warning">Les gouttières</p>
+                <p class="p-3 mb-0 border bg-warning">Les gouttières</p>
             </div>
             <div class="col-6">
-                <p class="p-3 border bg-warning">Les gouttières</p>
+                <p class="p-3 mb-0 border bg-warning">Les gouttières</p>
             </div>
             <div class="col-6">
-                <p class="p-3 border bg-warning">Les gouttières</p>
+                <p class="p-3 mb-0 border bg-warning">Les gouttières</p>
             </div>
             <div class="col-6">
-                <p class="p-3 border bg-warning">Les gouttières</p>
+                <p class="p-3 mb-0 border bg-warning">Les gouttières</p>
             </div>
         </div>
-
-
     </div>
 </body>
 
