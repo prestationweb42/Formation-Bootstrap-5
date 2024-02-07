@@ -51,55 +51,98 @@
     <!-- Début de la Leçon -->
     <div class="container p-5">
 
-        <h2 class="display-6 mb-3">Image de base </h2>
-
         <!-- [img-fluid] -->
-        <img src="https://images.unsplash.com/photo-1629277152917-966a1f1705cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" class="" alt="image colorée et abstraite">
-
-        <h2 class="display-6 mb-3 mt-5">Vignette</h2>
-        <!-- [img-thumbnail] -->
-        <img style="width: 400px" src="https://images.unsplash.com/photo-1629277152917-966a1f1705cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" class="" alt="image colorée et abstraite">
-
-
-        <h2 class="display-6 mb-3 mt-5">Tableau</h2>
+        <h2 class="display-6 mb-3">Image de base </h2>
+        <p class="fs-3">Avec img-fluid, l'image prend 100% de son parent</p>
         
-        <!-- [table] -->
+        <p class="fs-3">Exemple avec une image SANS la classe <span class="text-danger fw-bold">img-fluid</span></p>
+        <img src="https://images.unsplash.com/photo-1629277152917-966a1f1705cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" class="" alt="image colorée et abstraite">
+        <p class="fs-3 mt-5">Exemple avec une image AVEC la classe <span class="text-danger fw-bold">img-fluid</span></p>
+        <div class="w-50 border border-5 border-danger">
+          <img src="https://images.unsplash.com/photo-1629277152917-966a1f1705cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" class="img-fluid" alt="image colorée et abstraite">
+        </div>
+
+        <!-- Vignette -->
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3">Vignette</h2>
+        <p class="fs-3">Avec <span class="text-danger fw-bold">img-thumbnail</span>, permet de rajouter du "style" autour de l'image</p>
+        <!-- [] -->
+        <img style="width: 600px" src="https://images.unsplash.com/photo-1629277152917-966a1f1705cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" class="img-thumbnail" alt="image colorée et abstraite">
+        
+        
+        <!-- Tableau -->
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3">Tableau</h2>
+        
+        <!-- [] -->
         <!-- Scope est utilisé pour l'accessiblité -->
-        <!-- On peut varier les couleurs avec [table-primary|secondary|success|danger|etc...]-->
-        <!-- On peut utiliser les classes de couleurs sur le tableau global ou dans les "thead" et "tr" -->
-        <!-- On peut également construire un tableau zébré avec [table-striped] -->
-        <!-- Rendre survolable avec [table-hover] -->
-
+        <p class="fs-3">Tableau Sans la classe - <span class="text-danger fw-bold">table</span></p>
+        
         <table class="">
-            <thead class="">
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row ">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
-
+          <thead class="">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row ">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <p class="fs-3 mt-5">Tableau Avec la classe - <span class="text-danger fw-bold">table</span></p>
+        <p class="fs-3">On peut varier les couleurs du tableau global ou dans les "thead" et/ou "tr" avec : </p>
+        <p class="fs-3"><span class="text-danger fw-bold">table-primary / secondary / success / danger / etc...</span></p>
+        <p class="fs-3">On peut également construire un tableau zébré avec : <span class="text-danger fw-bold">table-striped</span></p>
+        <p class="fs-3">Rendre survolable avec : <span class="text-danger fw-bold">table-hover</span></p>
+        <p class="fs-3"><span class="text-danger fw-bold">Scope</span> est utilisé pour l'accessiblité en permettant de lire les colonnes et les rangées</p>
+         <table class="table table-striped table-hover">
+          <thead class="table-primary">
+            <tr class="">
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row ">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
 
     </div>
 
