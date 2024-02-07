@@ -49,62 +49,72 @@
     <!-- Début de la Leçon -->
     <div class="container p-5 mb-5">
 
+        <!-- Cartes -->
+        <h2 class="display-6 mb-3">Les Carte</h2>
+        <p class="fs-3">Une carte est un composant d'interface servant à montrer du contenu, qu'on réplique parfois (affichage d'articles, de profils multiples, etc ...)</p>
+        <p class="fs-3">Avec Bootstrap, elles sont composées de multiples classes, certaines n'apportant que peu de style.</p>
+        <p class="fs-3">Sur le parent : <span class="text-danger fw-bold">card</span></p>
+        <p class="fs-3">Styliser un header : <span class="text-danger fw-bold">card-header</span></p>
+        <p class="fs-3">Sur une image dans une carte : <span class="text-danger fw-bold">card-img-top</span></p>
+        <p class="fs-3">Sur le container du contenu : <span class="text-danger fw-bold">card-body</span></p>
+        <p class="fs-3">Sur les éléments du contenu : <span class="text-danger fw-bold">card-title|subtitle|text</span></p>
+        <p class="fs-3">Sur les liens : <span class="text-danger fw-bold">card-link</span></p>
+        <p class="fs-3">Notez la largeur en pixel, qui garde la même UI en permanence, mais qui empêche toute fluidité.</p>
+        
+        <!-- carte complète de base -->
+        <hr class="mt-5" style="border: 2px solid blue" />
         <h2 class="display-6 mb-3">Une carte complète de base</h2>
+        <p class="fs-3">Inspecter l'élément pour avoir les détails</p>
         
-        <!-- Une carte est un composant d'interface servant à montrer du contenu, qu'on réplique parfois (affichage d'articles, de profils multiples, etc ...) -->
-        <!-- Avec Bootstrap, elles sont composées de multiples classes, certaines n'apportant que peu de style. -->
         
-        <!-- [card] sur le parent -->
-        <!-- [card-img-top] sur une image dans une carte -->
-        <!-- [card-body] sur le container du contenu -->
-        <!-- [card-title|text] sur les éléments du contenu -->
-        <!-- Notez la largeur en pixel, qui garde la même UI en permanence, mais qui empêche toute fluidité. -->
-
-        <div class="" style="width: 18rem;">
-            <!-- Respectez le format lors du choix des images (portrait / paysage) -->
-            <img src="https://images.unsplash.com/photo-1638631221632-c18b0a8a40ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="">
-            <div class="">
-              <h5 class="">Escapade</h5>
-              <p class="">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Reserver</a>
-            </div>
+        <div class="card" style="width: 18rem;">
+          <!-- Respectez le format lors du choix des images (portrait / paysage) -->
+          <img src="https://images.unsplash.com/photo-1638631221632-c18b0a8a40ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Escapade</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Reserver</a>
           </div>
-
-
-        <h2 class="display-6 mb-3 mt-5">Une carte sans image, très simple</h2>
-
-        <!-- [card] sur le parent -->
-        <!-- [card-body] sur le contenu -->
-
-
-        <div class="card">
+        </div>
+        
+        
+        <!-- carte sans image -->
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3">Une carte sans image, très simple</h2>
+        <p class="fs-3">Sur le parent : <span class="text-danger fw-bold">card</span></p>
+        <p class="fs-3">Sur le container du contenu : <span class="text-danger fw-bold">card-body</span></p>
+        
+        <div class="card w-25">
           <p class="card-body mb-0">
             Lorem ipsum dolor sit amet.
           </p>
         </div>
-
-
-
-        <h2 class="display-6 mb-3 mt-5">Une carte simple avec des liens</h2>
-
-        <!-- [card-link] sur les liens -->
-        <!-- Card-link apporte seulement de la marge sur le seconde lien. -->
-
+        
+        
+        <!-- carte simple avec des liens -->
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3">Une carte simple avec des liens</h2>
+        <p class="fs-3">Sur les liens : <span class="text-danger fw-bold">card-link</span></p>
+        <p class="fs-3">Card-link apporte seulement de la marge sur le seconde lien</p>
+        
+        
         <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Lorem, ipsum dolor.</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Lorem, ipsum.</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">En savoir plus</a>
-              <a href="#" class="card-link">Acheter</a>
-            </div>
+          <div class="card-body">
+            <h5 class="card-title">Lorem, ipsum dolor.</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Lorem, ipsum.</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link">En savoir plus</a>
+            <a href="#" class="card-link">Acheter</a>
           </div>
+        </div>
+        
+        <!-- grille de cartes -->
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3">Une grille de cartes</h2>
+        <p class="fs-3">On peut facilement créer une grille et y placer des cartes</p>
+        <p class="fs-3">Le tout est donc responsive car on n'utilise pas de largeur en "dur"</p>
+        <p class="fs-3">Inspecter l'élément pour voir les détails</p>
 
-
-          <h2 class="display-6 mb-3 mt-5">Une grille de cartes</h2>
-
-          <!-- On peut facilement créer une grille et y placer des cartes -->
-          <!-- Le tout est donc responsive car on n'utilise pas de largeur en "dur" -->
 
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
@@ -143,11 +153,11 @@
             </div>
           </div>
 
-
-          <h2 class="display-6 mb-3 mt-5">Des cartes colorées</h2>
-
-          <!-- [card-header] stylise un header -->
-          <!-- [bg-X] pour les colorer -->
+          <!-- cartes colorées -->
+          <hr class="mt-5" style="border: 2px solid blue" />
+          <h2 class="display-6 mb-3">Des cartes colorées</h2>
+           <p class="fs-3">Styliser un header : <span class="text-danger fw-bold">card-header</span></p>
+           <p class="fs-3">Et pour les colorer : <span class="text-danger fw-bold">bg-primary / ...</span></p>
           
           <div class="row">
             <div class="card text-white bg-primary ms-3 mb-3" style="max-width: 18rem;">
