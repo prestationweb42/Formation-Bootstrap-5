@@ -50,24 +50,24 @@
     <div class="container p-5 mb-5">
 
         <h2 class="display-6 mb-3">Créer un spinner </h2>
-
-        <!-- [spinner-border] sur le parent -->
-        <!-- [text-primary|secondary|danger|info|...] -->
-        <!-- [spinner-grow] pour un autre style -->
-
-        <div class=""  role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
+        <p class="fs-3">Sur le parent : <span class="text-danger fw-bold">spinner-border</span></p>
+        <p class="fs-3">Pour styliser : <span class="text-danger fw-bold">text-primary|secondary|danger|info|...m</span></p>
+        <p class="fs-3">Pour styliser : <span class="text-danger fw-bold">spinner-grow</span></p>
         
-        <div class="" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-
-        <h2 class="display-6 mb-3 mt-5">Créer des boutons spinner </h2>
-
-        <!-- un bouton normal avec un spinner à l'intérieur -->
-        <!-- [spinner-border-sm] sur le span pour en faire un petit -->
-        <!-- Ici la classe [spinner-border] est directement ajoutée sur le span vu qu'on l'utilise dans un bouton. -->
+        <p class="fs-3">Exemple avec : <span class="text-danger fw-bold">spinner-border text-primary</span></p>
+        <div class="spinner-border text-primary"  role="status"></div>
+        
+        
+        <p class="fs-3 mt-5">Exemple avec : <span class="text-danger fw-bold">spinner-grow</span></p>
+        <div class="spinner-grow text-primary"  role="status"></div>
+        
+        <!-- Créer des boutons spinner  -->
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3">Créer des boutons spinner </h2>
+        <p class="fs-3 mt-5">Un bouton normal avec un spinner à l'intérieur</p>
+        <p class="fs-3">Sur le span pour en faire un petit : <span class="text-danger fw-bold">spinner-border-sm</span></p>
+        <p class="fs-3">Ici la classe : <span class="text-danger fw-bold">spinner-border</span> est directement ajoutée sur le span vu qu'on l'utilise dans un bouton</p>
+        
 
         <button class="btn btn-primary" type="button" disabled>
           <span class="spinner-border" role="status" aria-hidden="true"></span>
@@ -80,25 +80,32 @@
         </button>
 
 
-        <h2 class="display-6 mb-3 mt-5">Créer des barres de progressions</h2>
+        <!-- Créer des barres de progressions -->
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3">Créer des barres de progressions</h2>
+        <p class="fs-3">Sur le parent : <span class="text-danger fw-bold">progress</span></p>
+        <p class="fs-3">Sur l'enfant : <span class="text-danger fw-bold">progress-bar</span></p>
+        <p class="fs-3">Les attributs : <span class="text-danger fw-bold">aria/role</span> servent à l'accessiblité</p>
+        <p class="fs-3">La width en style définit la largeur</p>
+        <p class="fs-3">Sur l'enfant, pour lui appliquer un style zébré : <span class="text-danger fw-bold">progress-bar-striped</span></p>
+        <p class="fs-3">Pour la rendre animée : <span class="text-danger fw-bold">progress-bar-animated</span></p>
 
-        <!-- [progress] sur le parent -->
-        <!-- [progress-bar] sur l'enfant -->
-        <!-- Les attributs aria/role servent à l'accessiblité -->
-        <!-- La width en style définit la largeur -->
-        <!-- [progress-bar-striped] sur l'enfant pour lui appliquer un style zébré -->
-        <!-- [progress-bar-animated] pour la rendre animée -->
 
-        <div class="">
-            <div class="" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress">
+            <div class="progress-bar w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
             
-        <div class="  mt-3">
-            <div class="w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress  mt-3">
+            <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
 
         <div class="progress mt-3">
-            <div class=" w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        
+        <p class="fs-4 mt-5">Exemple avec les classes : <span class="text-danger fw-bold">progress-bar progress-bar-striped progress-bar-animated bg-danger w-75</span></p>
+        <div class="progress mt-3">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
     
     </div>
