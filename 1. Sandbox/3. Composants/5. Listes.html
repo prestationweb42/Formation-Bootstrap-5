@@ -50,48 +50,60 @@
     <div class="container p-5 mb-5">
 
         <h2 class="display-6 mb-3">Créer une liste </h2>
+        <p class="fs-3">Sur le parent (ul) : <span class="text-danger fw-bold">list-group</span></p>
+        <p class="fs-3">Sur les enfants (li) : <span class="text-danger fw-bold">list-group-item</span></p>
+        <p class="fs-3">Si on veut surligner un élément enfant (li) : <span class="text-danger fw-bold">active</span></p>
+        <p class="fs-3">Pour le "désactiver" : <span class="text-danger fw-bold">disabled</span></p>
+        <p class="fs-3">Sur le parent (ul) pour numéroter les li : <span class="text-danger fw-bold">list-group-numbered</span></p>
+        <p class="fs-3">Pour les "styliser" : <span class="text-danger fw-bold">list-group-item-success|danger|primary|...</span></p>
         
-        <!-- [list-group] sur le parent -->
-        <!-- [list-group-item] sur les enfants -->
-        <!-- [active] si on veut surligner un élément enfant -->
-        <!-- [disabled] pour le "désactiver" -->
-        <!-- [list-group-numbered] sur le parent pour numéroter les li -->
-        <!-- [list-group-item-success|danger|primary|...] pour les styliser -->
-
-        <ul class="">
-          <li class="">An item</li>
-          <li class=" active">A second item</li>
-          <li class="">A third item</li>
-          <li class="">A fourth item</li>
-          <li class="">And a fifth one</li>
+        
+        <p class="fs-3">Liste non-ordonnée</p>
+        <ul class="list-group w-25">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item active">A second item</li>
+          <li class="list-group-item">A third item</li>
+          <li class="list-group-item disabled">A fourth item</li>
+          <li class="list-group-item">And a fifth one</li>
+        </ul>
+       
+        <p class="fs-3 mt-4">Liste ordonnée</p>
+        <ul class="list-group-numbered w-50">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item active">A second item</li>
+          <li class="list-group-item">A third item</li>
+          <li class="list-group-item disabled">A fourth item</li>
+          <li class="list-group-item">And a fifth one</li>
         </ul>
 
 
-        <h2 class="display-6 mb-3 mt-5">Créer une liste de checkboxes </h2>
+        <!-- Créer une liste de checkboxes -->
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3">Créer une liste de checkboxes </h2>
+        <p class="fs-3">Sur le parent (div) : <span class="text-danger fw-bold">list-group</span></p>
+        <p class="fs-3">Sur les labels enfants (label) : <span class="text-danger fw-bold">list-group-item</span></p>
+        <p class="fs-3">Sur les checkboxes : <span class="text-danger fw-bold">form-check-input</span></p>
 
-        <!-- [list-group] sur le parent -->
-        <!-- [list-group-item] sur les labels enfant -->
-        <!-- [form-check-input] sur les checkboxes -->
         
-        <div class="">
-          <label class="">
-            <input class=" me-1" type="checkbox" value="">
+        <div class="list-group w-25">
+          <label class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="">
             First checkbox
           </label>
-          <label class="">
-            <input class=" me-1" type="checkbox" value="">
+          <label class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="">
             Second checkbox
           </label>
-          <label class="">
-            <input class=" me-1" type="checkbox" value="">
+          <label class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="">
             Third checkbox
           </label>
-          <label class="">
-            <input class=" me-1" type="checkbox" value="">
+          <label class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="">
             Fourth checkbox
           </label>
-          <label class="">
-            <input class=" me-1" type="checkbox" value="">
+          <label class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="">
             Fifth checkbox
           </label>
         </div>
