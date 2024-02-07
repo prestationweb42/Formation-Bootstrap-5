@@ -52,75 +52,74 @@
     <div class="container p-5 mb-5">
 
         <h2 class="display-6 mb-3">Un "breadcrumb" ou fil d'Ariane </h2>
+        <p class="fs-3">Sur le parent : <span class="text-danger fw-bold">breadcrumb</span></p>
+        <p class="fs-3">Sur les enfants : <span class="text-danger fw-bold">breadcrumb-item</span></p>
         
-        <!-- [breadcrumb] sur le parent -->
-        <!-- [breadcrumb-item] sur les enfants -->
-
-
         <nav>
-          <ol class="">
-            <li class=""><a href="#">Home</a></li>
-            <li class=" active" aria-current="page">Library</li>
-            <li class=""><a href="#">Contact</a></li>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Library</li>
+            <li class="breadcrumb-item"><a href="#">Contact</a></li>
           </ol>
         </nav>
         
-
-
-        <h2 class="display-6 mb-3 mt-5">Utiliser une icône perso.</h2>
+        <!-- Utiliser une icône perso -->
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3">Utiliser une icône perso.</h2>
+        <p class="fs-3">On donne une variable CSS à la navigation dans style : <span class="text-danger fw-bold">style="--bs-breadcrumb-divider: '>';"</span></p>
+        <p class="fs-3">Inspecter l'élément pour voir le détail</p>
         
-        <!-- On donne une variable CSS à la navigation -->
+        <!--  -->
         <nav style="--bs-breadcrumb-divider: '>';">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Library</li>
           </ol>
         </nav>
-
-        <h2 class="display-6 mb-3 mt-5">Créer une pagination.</h2>
-
-        <!-- [pagination] sur la liste parent -->
-        <!-- [page-item] sur les enfants -->
-        <!-- [page-link] sur les liens -->
-        <!-- [justify-content-center|end] pour centrer ou mettre au bout de la ligne -->
+        
+        <!-- Créer une pagination -->
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3">Créer une pagination encadrée par la balise nav</h2>
+        <p class="fs-3">Sur la liste parent (ul) : <span class="text-danger fw-bold">pagination</span></p>
+        <p class="fs-3">Sur la enfants (li) : <span class="text-danger fw-bold">page-item</span></p>
+        <p class="fs-3">Sur les liens (a) : <span class="text-danger fw-bold">page-link</span></p>
+        <p class="fs-3">Pour centrer ou mettre au bout de la ligne : <span class="text-danger fw-bold">justify-content-center|end</span></p>
         
         <nav>
-          <ul class="">
-            <li class=""><a class="page-link" href="#">Previous</a></li>
-            <li class=""><a class="page-link" href="#">1</a></li>
-            <li class=""><a class="page-link" href="#">2</a></li>
-            <li class=""><a class="page-link" href="#">3</a></li>
-            <li class=""><a class="page-link" href="#">Next</a></li>
+          <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
           </ul>
         </nav>
 
 
+        <!-- Créer une simple navigation -->
+        <hr class="mt-5" style="border: 2px solid blue" />
         <h2 class="display-6 mb-3 mt-5">Créer une simple navigation.</h2>
-
-        <!-- [nav] sur le parent -->
-        <!-- [nav-item] sur les enfants LI -->
-        <!-- [nav-link] sur les liens -->
-        <!-- [justify-content-center|end] pour centrer ou mettre au bout de la ligne -->
-        <!-- [flex-column] sur le parent pour en faire une colonne -->
-        <!-- [nav-pills] sur le parent pour faire des pills, notamment avec [active] sur les enfants -->
-
+        <p class="fs-3">Sur la liste parent (ul) : <span class="text-danger fw-bold">nav</span></p>
+        <p class="fs-3">Sur la enfants (li) : <span class="text-danger fw-bold">nav-item</span></p>
+        <p class="fs-3">Sur les liens (a) : <span class="text-danger fw-bold">nav-link</span></p>
+        <p class="fs-3">Pour centrer ou mettre en bout de la ligne : <span class="text-danger fw-bold">justify-content-center|end</span></p>
+        <p class="fs-3">Sur le parent pour en faire une colonne : <span class="text-danger fw-bold">flex-column</span></p>
+        <p class="fs-3">Sur le parent pour en faire des pills : <span class="text-danger fw-bold">nav-pills </span>notamment avec <span class="text-danger fw-bold">active</span> sur les enfants</p>
         
-        <ul class="">
-          <li class="">
-            <a class=" active" aria-current="page" href="#">Active</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
           </li>
-          <li class="">
-            <a class="" href="#">Link</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
           </li>
-          <li class="">
-            <a class="" href="#">Link</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
           </li>
-          <li class="">
-            <a class=" disabled">Disabled</a>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
           </li>
         </ul>
-        
-
     </div>
 </body>
 </html>
