@@ -1,0 +1,16 @@
+{
+    "name": "6.-personnalisation",
+    "version": "1.0.0",
+    "description": "Personnalisation Bootstrap 5",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass": "sass scss/global.scss styles/raw/style.css --watch",
+        "purge": "purgecss -css styles/raw/style.css --content index.html -o styles/cleaned/style.css"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bootstrap": "^5.3.2"
+    }
+}

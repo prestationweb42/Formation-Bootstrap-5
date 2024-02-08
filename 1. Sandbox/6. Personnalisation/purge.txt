@@ -1,0 +1,15 @@
+A la toute fin du projet
+Installer globalement PurgeCss :
+npm i -g purgecss
+
+Dans le package.json, dans la partie script,
+sous la commande de sass, tapez la cript suivant :
+"purge": "purgecss -css styles/raw/style.css --content index.html -o styles/cleaned/style.css"
+
+Attention cette manière de faire est valable pour une landing page uniquement
+
+Pour lancer la purge :
+npm run purge
+
+Donc à chaque modification après la purge, il faut relancer la commande :
+npm run purge
