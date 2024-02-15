@@ -44,88 +44,115 @@
     <div class="container p-5">
 
         <h2 class="display-6 mb-3">Les "Checkboxes"</h2>
+        <p class="fs-4"><span class="text-danger fw-bold">form-check</span> sur le parent</p>
+        <p class="fs-4"><span class="text-danger fw-bold">form-check-input</span> sur les inputs</p>
+        <p class="fs-4"><span class="text-danger fw-bold">form-check-label</span> sur les labels</p>
+        <p class="fs-4"><span class="text-danger fw-bold">disabled</span> pour désactiver</p>
 
-        <!-- [form-check] sur le  parent -->
-        <!-- [form-check-input] sur les inputs -->
-        <!-- [form-check-label] sur les labels -->
-        <!-- *disabled* pour désactiver -->
 
-
-        <form>
-          <div class="">
-            <input class="" type="checkbox" value="" id="flexCheckDefault">
-            <label class="" for="flexCheckDefault">
+        <form class="border border-2 p-4">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
               Default checkbox
             </label>
           </div>
-          <div class="">
-            <input class="" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="" for="flexCheckChecked">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
               Checked checkbox
             </label>
           </div>
         </form>
 
-        <h2 class="display-6 mb-3 mt-5">Les boutons radio en ligne</h2>
+        <!-- boutons radio en ligne -->
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3">Les boutons radio en ligne</h2>
+        <p class="fs-4"><span class="text-danger fw-bold">form-check</span> sur le parent</p>
+        <p class="fs-4"><span class="text-danger fw-bold">form-check-input</span> sur les inputs</p>
+        <p class="fs-4"><span class="text-danger fw-bold">form-check-label</span> sur les labels</p>
+        <p class="fs-4"><span class="text-danger fw-bold">disabled</span> pour désactiver</p>
         
-        <!-- Même classes qu'au dessus mais ... -->
-        <!-- [form-check-inline] sur le parent si on veut les mettre en ligne -->
-
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-          <label class="form-check-label" for="inlineRadio1">1</label>
+        <div class="border border-2 p-4 mb-3">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">1</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">2</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+          </div>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-          <label class="form-check-label" for="inlineRadio2">2</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
-          <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
-        </div>
 
-
-
-        <h2 class="display-6 mb-3 mt-5">Les "Switch"</h2>
-
-        <!-- [form-check + form-switch] sur le  parent -->
-        <!-- [form-check-input] sur les inputs -->
-        <!-- [form-check-label] sur les labels -->
-        <!-- *disabled* pour désactiver -->
-
-        <div class="">
-          <input class="" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="" for="flexSwitchCheckDefault">Default switch checkbox input</label>
-        </div>
-        <div class="">
-          <input class="" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-          <label class="" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+        <p class="fs-4"><span class="text-danger fw-bold">form-check-inline</span> sur le parent si on veut les mettre en ligne</p>
+        <div class="border border-2 p-4">
+          <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">1</label>
+          </div>
+          <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">2</label>
+          </div>
+          <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+          </div>
         </div>
 
 
-        <h2 class="display-6 mb-3 mt-5">Le "Select"</h2>
-
-        <!-- [form-select] sur le select -->
-        <!-- [form-select-lg|sm] pour sa taille -->
-        <!-- attribut *multiple* afin de sélectionner plusieurs éléments -->
-        <!-- *disabled* pour désactiver -->
-
-        <select  class="" aria-label="Default select example">
-          <option selected>Open this select menu</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
-
-
+        <!-- Switch -->
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3">Les "Switch"</h2>
+        <p class="fs-4"><span class="text-danger fw-bold">form-check + form-switch</span> sur le parent</p>
+        <p class="fs-4"><span class="text-danger fw-bold">form-check-input</span> sur les inputs</p>
+        <p class="fs-4"><span class="text-danger fw-bold">form-check-label</span> sur les labels</p>
+        <p class="fs-4"><span class="text-danger fw-bold">disabled</span> pour désactiver</p>
+        <p class="fs-4">Attribut <span class="text-danger fw-bold">checked</span> pour être activé</p>
         
-        <h2 class="display-6 mb-3 mt-5">La "range"</h2>
+         <div class="border border-2 p-4">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input no checked</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+          <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+        </div>
+        </div>
+        
+        <!-- Select -->
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3">Le "Select"</h2>
+        <p class="fs-4"><span class="text-danger fw-bold">form-select</span> sur le select</p>
+        <p class="fs-4"><span class="text-danger fw-bold">form-select-lg|sm</span> pour sa taille</p>
+        <p class="fs-4">attribut <span class="text-danger fw-bold">multiple</span> afin de sélectionner plusieurs éléments</p>
+        <p class="fs-4"><span class="text-danger fw-bold">disabled</span> pour désactiver</p>
 
-        <!-- [form-range] sur l'input type range -->
-        <!-- On peut utiliser *min* + *max* et / ou *step* -->
+         <div class="border border-2 p-4">
+           <select  class="form-select" aria-label="Default select example">
+             <option selected>Open this select menu</option>
+             <option value="1">One</option>
+             <option value="2">Two</option>
+             <option value="3">Three</option>
+          </select>
+        </div>
 
-        <label for="customRange1" class="form-label">Example range</label>
-        <input type="range" class="" min="0" max="100"   id="customRange1">
+
+        <!-- Range -->
+        <hr class="mt-5" style="border: 2px solid blue" />
+        <h2 class="display-6 mb-3">La "range"</h2>
+        <p class="fs-4"><span class="text-danger fw-bold">form-range</span> sur l'input type range</p>
+        <p class="fs-4">On peut utiliser <span class="text-danger fw-bold"> min + max et / ou step</span></p>
+        
+        <div class="border border-2 p-4">
+          <label for="customRange1" class="form-label">Example range</label>
+          <input type="range" class="form-range" min="0" max="100" step="10" id="customRange1">
+        </div>
 
 
       </div>
