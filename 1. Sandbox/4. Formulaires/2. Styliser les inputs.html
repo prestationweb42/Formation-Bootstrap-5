@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ border border-2 p-4<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -43,62 +43,68 @@
     <!-- Début de la Leçon -->
     <div class="container p-5">
 
-        <h2 class="display-6 mb-3">Styliser les inputs</h2>
+      <h2 class="display-6 mb-3">Styliser les inputs</h2>
+      
+      
+      <h4 class="mt-5">Icône sur le côté</h4>
+      <p class="fs-4"><span class="text-danger fw-bold">input-group</span> sur le parent</p>
+      <p class="fs-4">Un span avec <span class="text-danger fw-bold">input-group-text</span></p>
+      <p class="fs-4">On peut aussi mettre une image dans le span, etc<span class="text-danger fw-bold"></span></p>
+      <!--  -->
+      
+      <div class="input-group mb-3 border border-2 p-4">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username">
+      </div>
+      
+      
+      
+      <h4 class="mt-5">Terminer par un mail</h4>
+      <p class="fs-4"><span class="text-danger fw-bold">input-group</span> sur le parent</p>
+      <p class="fs-4">Un span avec <span class="text-danger fw-bold">input-group-text</span></p>
 
 
-        <h4 class="mt-5">Icône sur le côté</h4>
-
-        <!-- [input-group] sur le parent -->
-        <!-- Un span avec [input-group-text] -->
-        <!-- On peut mettre une image dans le span -->
-
-        <div class=" mb-3">
-          <span class="" id="basic-addon1">@</span>
-          <input type="text" class="form-control" placeholder="Username">
-        </div>
-
-
-        
-        <h4 class="mt-5">Terminer par un mail</h4>
-
-        <!-- [input-group] sur le parent -->
-        <!-- Un span avec [input-group-text] -->
-
-        <div class=" mb-3">
+        <div class="input-group mb-3 border border-2 p-4">
           <input type="text" class="form-control" placeholder="Les deux premières parties de votre mail">
-          <span class="" id="basic-addon2">@example.com</span>
+          <span class="input-group-text" id="basic-addon2">@example.com</span>
         </div>
 
 
                 
         <h4 class="mt-5">Intégrer plusieur spans</h4>
-
+        <p class="fs-4"><span class="text-danger fw-bold">input-group</span> sur le parent</p>
+        <p class="fs-4">2 spans avec <span class="text-danger fw-bold">input-group-text</span></p>
         <!-- [input-group] sur le parent -->
         <!-- Deux spans avec [input-group-text] -->
         
-        <div class=" mb-3">
-          <span class="">€</span>
-          <span class="">0.00</span>
+        <div class="input-group mb-3 border border-2 p-4">
+          <span class="input-group-text">€</span>
+          <span class="input-group-text">0.00</span>
           <input type="text" class="form-control">
         </div>
 
 
                 
         <h4 class="mt-5">Label flottant avec un input</h4>
-
-        <!-- [form-floating] sur le parent -->
-        <!-- [form-control] sur l'input -->
+        <p class="fs-4"><span class="text-danger fw-bold">form-floating</span> sur le parent</p>
+        <p class="fs-4"><span class="text-danger fw-bold">form-control</span> sur l'input</p>
         
-        <div class="">
-          <input type="email" class="" id="floatingInputValue" placeholder="name@example.com" value="test@example.com">
-          <label for="floatingInputValue">Entrez votre mail</label>
+        <div class="border border-2 p-4">
+          <div class="form-floating border border-2">
+            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com">
+            <label for="floatingInputValue">Entrez votre mail</label>
+          </div>
         </div>
 
                         
         <h4 class="mt-5">Label flottant avec un textarea</h4>
-        <div class="">
-            <textarea class="" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+        <p class="fs-4"><span class="text-danger fw-bold">form-floating</span> sur le parent</p>
+        <p class="fs-4"><span class="text-danger fw-bold">form-control</span> sur l'input</p>
+        <div class="border border-2 p-4">
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
             <label for="floatingTextarea2">Comments</label>
+          </div>
           </div>
       </div>
 </body>
