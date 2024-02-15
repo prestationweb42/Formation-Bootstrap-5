@@ -45,16 +45,15 @@
     <div class="container p-5">
 
       <h2 class="display-6 mb-3">La validation des inputs</h2>
-      
-      <!-- Il faut rajouter le script en fin de page -->
-      <!-- Il faut que le formulaire ait la classe [needs-validation] -->
-      <!-- Notez le "novalidate" -->
-      <!-- Entourez l'input qui requiert une validation d'une div et rajoutez deux divs sous l'input.
-        1. une div avec la classe [valid-feedback] pour la validation positive  
-        2. une div avec la classe [invalid-feedback] pour la validation positive 
-      -->
+      <p class="fs-4">Il faut rajouter le script en fin de page<span class="text-danger fw-bold"></span></p>
+      <p class="fs-4">Il faut que le formulaire ait la classe <span class="text-danger fw-bold">needs-validation</span></p>
+      <p class="fs-4">L'attribut <span class="text-danger fw-bold">novalidate</span> sur la balise form permet de supprimer la validation du navigateur</p>
+      <p class="fs-4">Entourez l'input qui requiert une validation d'une div et rajoutez deux divs sous l'input<span class="text-danger fw-bold"></span></p>
+      <p class="fs-4">1. une div avec la classe <span class="text-danger fw-bold">valid-feedback</span> pour la validation positive</p>
+      <p class="fs-4">2. une div avec la classe <span class="text-danger fw-bold">invalid-feedback</span> pour une validation négative</p>
+      <p class="fs-4">Inspecter l'élément pour voir les détails<span class="text-danger fw-bold"></span></p>
 
-      <form class="row g-3 needs-validation" novalidate>
+      <form class="row g-3 needs-validation border border-2 p-4" novalidate>
 
         <div class="col-md-4">
           <label for="validation1" class="form-label">First name</label>
@@ -73,13 +72,15 @@
       </form>
 
 
-      
-      <h2 class="display-6 mb-3 mt-5">La validation par défault avec "required"</h2>
-      
-      <!-- Mettez le script en commentaire -->
-      <!-- Rajoutez l'attribut "required" -->
+       <!-- Validation par défault avec "required" -->
+      <hr class="mt-5" style="border: 2px solid blue" />
+      <h2 class="display-6 mb-3">La validation par défault avec "required"</h2>
+      <p class="fs-4">L'attribut <span class="text-danger fw-bold">required</span> permet la validation du navigateur</p>
+      <p class="fs-4">Mettez le script en commentaire<span class="text-danger fw-bold"></span></p>
+      <p class="fs-4">Rajoutez l'attribut <span class="text-danger fw-bold">required</span></p>
+      <p class="fs-4">Inspecter l'élément pour voir les détails<span class="text-danger fw-bold"></span></p>
 
-      <form class="row g-3 needs-validation">
+      <form class="row g-3 needs-validation border border-2 p-4">
         <div class="col-md-4">
           <label for="validation2" class="form-label">First name</label>
           <input type="text" class="form-control" id="validation2"  required>
@@ -93,14 +94,15 @@
 
 
 
-            
-      <h2 class="display-6 mb-3 mt-5">Validation Tooltips</h2>
-      
-      <!-- Mettez le script en commentaire -->
-      <!-- rajouter la classe [valid-tooltip] ou [invalid-tooltip] aux divs de validation sous l'input -->
+      <!-- Validation Tooltips -->
+      <hr class="mt-5" style="border: 2px solid blue" />
+      <h2 class="display-6 mb-3">Validation Tooltips</h2>
+      <p class="fs-4">Rajouter les classes <span class="text-danger fw-bold">valid-tooltip et invalid-tooltip</span> aux divs de validation sous l'input</p>
+      <p class="fs-4">Mettez le script en commentaire<span class="text-danger fw-bold"></span></p>
+      <p class="fs-4">Inspecter l'élément pour voir les détails<span class="text-danger fw-bold"></span></p>
 
 
-      <form class="row g-3 needs-validation" novalidate>
+      <form class="row g-3 needs-validation border border-2 p-4" novalidate>
         <div class="col-md-4 position-relative">
           <label for="validation3" class="form-label">First name</label>
           <input type="text" class="form-control" id="validation3"  required>
